@@ -1,6 +1,6 @@
 import React from "react";
 import PrivateRoute from "./PrivateRoute";
-import { Home, Error, Dashboard } from "../pages";
+import { Home, Error, Dashboard, Login } from "../pages";
 
 const protectedRoutes = [
 	{
@@ -13,6 +13,10 @@ const nonProtectedRoutes = [
 	{
 		path: "/",
 		component: <Home />,
+	},
+	{
+		path: "/login",
+		component: <Login />,
 	},
 	{
 		path: "*",
